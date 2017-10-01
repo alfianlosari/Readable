@@ -6,6 +6,7 @@
 #### Installation
 1. Run npm install to install all the dependencies in your machine
 2. Run npm start to run the project in localhost
+3. Run the server on the localhost
 
 #### Usage
 1. Main view lists all the categories and current posts for all categories
