@@ -23,7 +23,7 @@ class EditPost extends Component {
         });
         this.props.onSubmit();
 	};
-ß
+
     render() {
         return (
             <div className="Edit-Post">

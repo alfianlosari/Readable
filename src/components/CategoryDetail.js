@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ListPosts from './ListPosts';
+import NavigationHeader from './NavigationHeader';
 
 class CategoryDetail extends Component {
 
@@ -7,6 +8,7 @@ class CategoryDetail extends Component {
 		const categoryId = this.props.match.params.categoryId
         return (
             <div className="category-view">
+				<NavigationHeader />
 				<h1>{categoryId}</h1>
 				<ListPosts
 					categoryId={categoryId}

@@ -12,7 +12,6 @@ class ListCategories extends Component {
     render() {
         return (
             <div className="list-categories">
-                <h3>Categories</h3>
                 <ol className='Category-List'>
                     {
                         this.props.categories.map((category) => 

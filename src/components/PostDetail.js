@@ -6,7 +6,7 @@ import { editPost, votePost, removePost  } from '../actions/posts';
 import Modal from 'react-modal';
 import EditPost from './EditPost';
 import dateFormatter  from '../utils/date_helper';
-
+import NavigationHeader from './NavigationHeader';
 
 class PostDetail extends Component {
 
@@ -36,7 +36,7 @@ class PostDetail extends Component {
 
         return (
             <div className="post-detail">
-                   
+                <NavigationHeader />
                 {post != null &&
                     <div>
                         <h1>{post.title}</h1>
@@ -59,6 +59,7 @@ class PostDetail extends Component {
                             <EditPost
                                 post={post}
                                 updatePost={this.props.updatePost}
+                                onSubmit={this.closeEditModal}
                             />
                             <button onClick={() => this.closeEditModal()}>Close</button>
                         </Modal>

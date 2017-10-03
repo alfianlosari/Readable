@@ -3,10 +3,15 @@
 
 #### A Web application where user can post, comment, vote on category of things built using React + Redux
 
-#### Installation
+#### Installation Front End
 1. Run npm install to install all the dependencies in your machine
 2. Run npm start to run the project in localhost
-3. Run the server on the localhost
+
+#### Installation API Server
+1. Clone server api from https://github.com/udacity/reactnd-project-readable-starter
+2. cd into api-server directory
+3. Run npm install
+4. Run node server
 
 #### Usage
 1. Main view lists all the categories and current posts for all categories

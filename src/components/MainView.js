@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ListCategories from './ListCategories';
+import NavigationHeader from './NavigationHeader';
 import ListPosts from './ListPosts';
 import { connect } from 'react-redux';
 
@@ -8,8 +8,7 @@ class MainView extends Component {
     render() {
         return (
             <div className='main-view'>
-                <h1>Readable</h1>
-                <ListCategories />
+                <NavigationHeader />
                 <ListPosts
                     categories={this.props.categories}
                 />

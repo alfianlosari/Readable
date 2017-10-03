@@ -64,6 +64,19 @@ a:active {
   min-width: 500px;
 }
 
+.navigation-header ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-header li {
+  display: inline;
+}
+
+.navigation-header li a {
+  padding-right: 8px;
+}
 .list-comments h3 {
   margin: 8px 0px;
 }
