@@ -16,7 +16,7 @@ class PostList extends Component {
         const post = this.props.post;
         return (
             <li> 
-                <Link to={`/post/${post.id}`}>
+                <Link to={`/${post.category}/${post.id}`}>
                     {post.title} | {post.category} | {post.voteScore} votes 
                 </Link>
                 <div className='post-subtitle'>

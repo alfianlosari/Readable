@@ -13,8 +13,8 @@ import PostDetail from './components/PostDetail';
 import CategoryDetail from './components/CategoryDetail';
 import { ConnectedRouter, routerMiddleware } from 'react-router-redux';
 
-const composeEnchancers = window.__REDUX_DEVTOOLS_EXTENSION__COMPOSE || compose
 const history = createHistory();
+const composeEnchancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 const middleware = routerMiddleware(history);
 const store = createStore(reducers,
     composeEnchancers(
@@ -27,8 +27,8 @@ ReactDOM.render(
         <ConnectedRouter history={history}>
             <div>
                 <Route exact path='/' component={MainView}/>
-                <Route path='/category/:categoryId' component={CategoryDetail}/>
-                <Route path='/post/:postId' component={PostDetail}/>
+                <Route exact path='/:categoryId' component={CategoryDetail}/>
+                <Route exact path='/:categoryId/:postId' component={PostDetail}/>
             </div>
 
         </ConnectedRouter>
